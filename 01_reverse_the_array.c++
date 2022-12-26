@@ -6,7 +6,7 @@ vector<int> reverseTheArray(vector<int> a)
 {
 
     int s = 0, e = a.size() - 1;
-    if (s <= e)
+    while (s <= e)
     {
         swap(a[s], a[e]);
         s++;
@@ -34,10 +34,10 @@ int main()
     a.push_back(20);
     a.push_back(25);
 
-    /* vector<int> ans =*/reverseTheArray(a);
+    vector<int> ans =reverseTheArray(a);
         for (int i =0;i<=a.size()-1;i++)
         {
-            cout << a[i] << " ";
+            cout << ans[i] << " ";
         }
     // printArray(ans);
     return 0;
